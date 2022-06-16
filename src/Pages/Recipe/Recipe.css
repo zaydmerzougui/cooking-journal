@@ -1,0 +1,50 @@
+.recipe {
+  max-width: 1200px;
+  margin: 40px auto;
+  text-align: center;
+  background-color: #fff;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.recipe ul {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+  margin-top: 0;
+}
+
+.recipe li {
+  list-style: none;
+  margin-right: 10px;
+  color: #777;
+}
+
+.recipe li::after {
+  content: ",";
+}
+
+.recipe li:last-child::after {
+  content: ".";
+}
+
+.method {
+  text-align: left;
+  line-height: 1.5em;
+}
+
+.del {
+  padding: 1em 2em;
+  background-color: red;
+  color: #fff;
+  font-size: .7em;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-top: 1em;
+  cursor: pointer;
+}
+
+.recipe.dark {
+  background-color: #555;
+  color: #e4e4e4;
+}
